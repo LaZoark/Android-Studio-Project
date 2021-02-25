@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     static TextView txt;
     static float text_main_size;
 
+    @SuppressLint("SetTextI18n")
     public void button_bigger(View v) {  //這個View是必須的，傳物件用途
         txt = (TextView) findViewById(R.id.text_main);
         txt.setText("Hello, B0742006.");
@@ -27,10 +29,17 @@ public class MainActivity extends AppCompatActivity {
         txt.setTextSize(TypedValue.COMPLEX_UNIT_PX, text_main_size);
     }
 
+    @SuppressLint("SetTextI18n")
     public void button_smaller(View v) {
         txt = (TextView) findViewById(R.id.text_main);
         txt.setText("Hello, B0742006.");
         text_main_size = txt.getTextSize() - 3;
         txt.setTextSize(TypedValue.COMPLEX_UNIT_PX, text_main_size);
+    }
+
+    public void button_confirm(View v) {
+        txt = (TextView) findViewById(R.id.text_main);
+        EditText name = (EditText) findViewById(R.id.editTextPersonName);
+        txt.setText("Hello, " + name.getText().toString());
     }
 }

@@ -2,4 +2,7 @@
     <string name="app_name">Text_and_button_practice</string>
     <string name="button_big">放大</string>
     <string name="button_small">縮小</string>
+    <string name="button_confirm">確認</string>
+    <string name="Fill_name">Name</string>
+    <string name="who_are_you">Who are you?</string>
 </resources>
