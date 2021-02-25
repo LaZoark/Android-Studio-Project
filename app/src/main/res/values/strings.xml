@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Text_and_button_practice</string>
+    <string name="button_big">放大</string>
+    <string name="button_small">縮小</string>
+</resources>
